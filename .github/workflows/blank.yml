@@ -1,0 +1,14 @@
+#import Module.
+pip install qrcode
+
+#we need to import the qrcode
+import qrcode
+
+#We need a image of the QR. Here we can use any link to generate QR Code...
+#In this case I have used Amazon.in
+img= qrcode.make("https://www.amazon.in/")
+
+#We can now save the image file in our local system..
+img.save("Amazon.jpg")
+
+
