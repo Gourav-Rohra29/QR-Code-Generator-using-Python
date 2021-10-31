@@ -11,4 +11,13 @@ img= qrcode.make("https://www.amazon.in/")
 #We can now save the image file in our local system..
 img.save("Amazon.jpg")
 
+#Matplotlib is imported so we can see the image.
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+#Image is saved in the local system.
+img = mpimg.imread(r"C:\Users\Admin\Amazon.jpg")
+imgplot = plt.imshow(img)
+
+
 
